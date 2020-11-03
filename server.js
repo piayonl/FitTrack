@@ -22,6 +22,8 @@ app.use(express.static("public"));
 mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://Fitness:Fitness@fitness.cywgq.mongodb.net/Fitness?retryWrites=true&w=majority",
   
 {useNewUrlParser: true,
+useUnifiedTopology: true,
+useCreateIndex: true,
 useFindAndModify: false,
 });
 // useUnifiedTopology: true 
